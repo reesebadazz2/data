@@ -1,3 +1,26 @@
-bin,scheme,card_type,card_category,country_code,country,issuer,issuer_phone,issuer_website,card_length
-535116,MASTERCARD,DEBIT,STANDARD,UA,UKRAINE,PUBLIC JOINT STOCK COMPANY TASCOMBANK,123456,www.example.com,16
-403298,VISA,DEBIT,BUSINESS,CD,CONGO,RAWBANK,,,
+{
+  result: 200,
+  message: "SUCCESS",
+  data: {
+    card: {
+      scheme: "Visa",
+      type: "Debit",
+      category: "Corporate t&e",
+      length: -1,
+      checkluhn: 1,
+      cvvlen: 3
+    },
+    country: {
+      name: "Egypt",
+      code: "eg",
+      flag: "🇪🇬",
+      currency: "Egyptian pound",
+      currency_code: "EGP"
+    },
+    bank: {
+      name: "ARAB INTERNATIONAL BANK",
+      website: "http://www.aib.com.eg:81/web/wps/portal/enaib",
+      phone: "23918794"
+    }
+  }
+}
